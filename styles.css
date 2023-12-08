@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f5fd;
+    /* Azul claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #cfe0f8;
+    /* Azul más oscuro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+    color: #3a64a0;
+    /* Azul más intenso */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #3a64a0;
+    /* Azul más intenso */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #3a64a0;
+    /* Azul más intenso */
+    border-radius: 4px;
+}
+
+button {
+    background-color: #f2f5fd;
+    /* Azul claro */
+    color: #3a64a0;
+    /* Azul más intenso */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cfe0f8;
+    /* Azul más oscuro */
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para la paleta de colores */
+h1 {
+    color: #f2f5fd;
+    /* Azul claro */
+}
+
+form {
+    border: 2px solid #3a64a0;
+    /* Azul más intenso */
+}
+
+button {
+    background-color: #cfe0f8;
+    /* Azul más oscuro */
+}
+
+button:hover {
+    background-color: #3a64a0;
+    /* Azul más intenso */
+}

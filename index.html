@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Informe de Proyecto de Investigación</title>
+</head>
+
+<body>
+
+    <form action="procesar_informe.php" method="post">
+        <h1>Informe de Proyecto de Investigación</h1>
+
+        <!-- Documentación del Formulario -->
+        <section>
+            <h2>1. Introducción</h2>
+            <p>Este formulario está diseñado para recopilar información detallada sobre el progreso de un proyecto de
+                investigación. Se divide en secciones que abarcan desde la información general del proyecto hasta la
+                evaluación y observaciones de los directores académicos.</p>
+            <p><strong>Uso del Formulario:</strong></p>
+            <ul>
+                <li>Complete todos los campos obligatorios (marcados con asterisco).</li>
+                <li>Proporcione información precisa y actualizada.</li>
+                <li>Si un campo no es aplicable, déjelo en blanco o seleccione la opción "N/A" si está disponible.</li>
+                <li>Firme y feche el formulario al final.</li>
+            </ul>
+        </section>
+
+        <!-- I. Pagina principal con datos generales -->
+        <section>
+            <h2>I. GENERALIDADES</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" name="codigo" required>
+
+            <label for="categoriaAcademica">Categoría Académica:</label>
+            <input type="text" id="categoriaAcademica" name="categoriaAcademica" required>
+
+            <label for="facultad">Facultad:</label>
+            <input type="text" id="facultad" name="facultad" required>
+
+            <label for="instituto">Instituto:</label>
+            <input type="text" id="instituto" name="instituto" required>
+
+            <label for="escuela">Escuela (si es docente):</label>
+            <input type="text" id="escuela" name="escuela">
+
+            <label for="lineaInvestigacion">Línea de Investigación:</label>
+            <input type="text" id="lineaInvestigacion" name="lineaInvestigacion" required>
+
+            <label for="programa">Programa (si aplica):</label>
+            <input type="text" id="programa" name="programa">
+
+            <label for="horasSemanales">Horas Semanales Contratadas:</label>
+            <input type="number" id="horasSemanales" name="horasSemanales" required>
+
+            <!-- Resoluciones -->
+            <label for="resolucionCU">Resolución CU:</label>
+            <input type="text" id="resolucionCU" name="resolucionCU" placeholder="No." required>
+            <input type="date" id="fechaResolucionCU" name="fechaResolucionCU" placeholder="Fecha" required>
+
+            <label for="resolucionCAIP">Resolución CAIP:</label>
+            <input type="text" id="resolucionCAIP" name="resolucionCAIP" placeholder="No." required>
+            <input type="date" id="fechaResolucionCAIP" name="fechaResolucionCAIP" placeholder="Fecha" required>
+
+            <label for="resolucionCGICT">Resolución CGICT:</label>
+            <input type="text" id="resolucionCGICT" name="resolucionCGICT" placeholder="No." required>
+            <input type="date" id="fechaResolucionCGICT" name="fechaResolucionCGICT" placeholder="Fecha" required>
+
+            <label for="resolucionDirectivoFacultad">Resolución Consejo Directivo Facultad:</label>
+            <input type="text" id="resolucionDirectivoFacultad" name="resolucionDirectivoFacultad" placeholder="No."
+                required>
+            <input type="date" id="fechaResolucionDirectivoFacultad" name="fechaResolucionDirectivoFacultad"
+                placeholder="Fecha" required>
+
+            <label for="fechaInicioProyecto">Fecha Inicio del Proyecto:</label>
+            <input type="date" id="fechaInicioProyecto" name="fechaInicioProyecto" required>
+
+            <label for="duracionSemestres">Duración en Semestres:</label>
+            <input type="number" id="duracionSemestres" name="duracionSemestres" required>
+
+            <label for="fechaTerminoProyecto">Fecha Término del Proyecto:</label>
+            <input type="date" id="fechaTerminoProyecto" name="fechaTerminoProyecto" required>
+
+            <label for="institucionesParticipantes">Instituciones Participantes:</label>
+            <textarea id="institucionesParticipantes" name="institucionesParticipantes" rows="4"></textarea>
+
+            <label for="entidadFinanciadoraNacional">Entidad Financiadora Nacional:</label>
+            <input type="text" id="entidadFinanciadoraNacional" name="entidadFinanciadoraNacional">
+
+            <label for="entidadFinanciadoraInternacional">Entidad Financiadora Internacional:</label>
+            <input type="text" id="entidadFinanciadoraInternacional" name="entidadFinanciadoraInternacional">
+        </section>
+
+
+        <section>
+            <h2>II. INFORMACION DEL PROYECTO DE INVESTIGACION</h2>
+
+            <label for="objetivosLogrados">Objetivos Logrados en el Semestre:</label>
+            <textarea id="objetivosLogrados" name="objetivosLogrados" rows="4"></textarea>
+
+            <label for="actividadesRealizadas">Actividades Realizadas (según cronograma):</label>
+            <textarea id="actividadesRealizadas" name="actividadesRealizadas" rows="4"></textarea>
+
+            <label for="avanceResultados">Avance de Resultados Obtenidos:</label>
+            <textarea id="avanceResultados" name="avanceResultados" rows="4"></textarea>
+
+            <label for="objetivosNoLogrados">Objetivos No Logrados:</label>
+            <textarea id="objetivosNoLogrados" name="objetivosNoLogrados" rows="4"></textarea>
+
+            <label for="actividadesNoRealizadas">Actividades No Realizadas. Causas:</label>
+            <textarea id="actividadesNoRealizadas" name="actividadesNoRealizadas" rows="4"></textarea>
+        </section>
+
+        <!-- III. OTRAS ACTIVIDADES REALIZADAS EN EL ÁMBITO ACADÉMICO -->
+        <section>
+            <h2>III. OTRAS ACTIVIDADES REALIZADAS EN EL ÁMBITO ACADÉMICO</h2>
+
+            <label for="otrasActividadesAcademicas">Otras Actividades Realizadas:</label>
+            <textarea id="otrasActividadesAcademicas" name="otrasActividadesAcademicas" rows="4"></textarea>
+        </section>
+
+        <!-- *CRONOGRAMA DE ACTIVIDADES PARA EL PRÓXIMO SEMESTRE -->
+        <section>
+            <h2>*CRONOGRAMA DE ACTIVIDADES PARA EL PRÓXIMO SEMESTRE</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Actividades</th>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="actividad1"></td>
+                        <td><input type="text" name="actividad2"></td>
+                        <td><input type="text" name="actividad3"></td>
+                        <td><input type="text" name="actividad4"></td>
+                        <td><input type="text" name="actividad5"></td>
+
+                    </tr>
+
+
+                    <section>
+                        <h2>IV. EVALUACION DEL (LA) DIRECTOR(A) DEL INSTITUTO</h2>
+
+                        <label for="evaluacionDirector">Evaluación del Director del Instituto:</label>
+                        <textarea id="evaluacionDirector" name="evaluacionDirector" rows="4"></textarea>
+
+                        <label for="firmaDirector">Firma del Director del Instituto:</label>
+                        <input type="text" id="firmaDirector" name="firmaDirector">
+
+                        <label for="fechaDirector">Fecha de Evaluación:</label>
+                        <input type="date" id="fechaDirector" name="fechaDirector">
+                    </section>
+
+                    <!-- V. OBSERVACIÓN DEL (LA) DIRECTOR(A) DE INVESTIGACIÓN DE LA FACULTAD -->
+                    <section>
+                        <h2>V. OBSERVACIÓN DEL (LA) DIRECTOR(A) DE INVESTIGACIÓN DE LA FACULTAD</h2>
+
+                        <label for="observacionDirectorFacultad">Observaciones del Director de Investigación de la
+                            Facultad:</label>
+                        <textarea id="observacionDirectorFacultad" name="observacionDirectorFacultad"
+                            rows="4"></textarea>
+
+                        <label for="firmaDirectorFacultad">Firma del Director de Investigación de la Facultad:</label>
+                        <input type="text" id="firmaDirectorFacultad" name="firmaDirectorFacultad">
+
+                        <label for="fechaDirectorFacultad">Fecha de Observación:</label>
+                        <input type="date" id="fechaDirectorFacultad" name="fechaDirectorFacultad">
+                    </section>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <button type="submit">Enviar Informe</button>
+    </form>
+
+</body>
+
+</html>
