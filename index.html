@@ -97,104 +97,22 @@
         </section>
 
 
+
         <section>
-            <h2>II. INFORMACION DEL PROYECTO DE INVESTIGACION</h2>
-
-            <label for="objetivosLogrados">Objetivos Logrados en el Semestre:</label>
-            <textarea id="objetivosLogrados" name="objetivosLogrados" rows="4"></textarea>
-
-            <label for="actividadesRealizadas">Actividades Realizadas (según cronograma):</label>
-            <textarea id="actividadesRealizadas" name="actividadesRealizadas" rows="4"></textarea>
-
-            <label for="avanceResultados">Avance de Resultados Obtenidos:</label>
-            <textarea id="avanceResultados" name="avanceResultados" rows="4"></textarea>
-
-            <label for="objetivosNoLogrados">Objetivos No Logrados:</label>
-            <textarea id="objetivosNoLogrados" name="objetivosNoLogrados" rows="4"></textarea>
-
-            <label for="actividadesNoRealizadas">Actividades No Realizadas. Causas:</label>
-            <textarea id="actividadesNoRealizadas" name="actividadesNoRealizadas" rows="4"></textarea>
+            <h2>Descargar PDF con Campos Prellenados:</h2>
+            <p>Descargue el PDF con los campos prellenados:</p>
+            <a href="Formulario.pdf" download>Descargar PDF</a>
         </section>
 
-        <!-- III. OTRAS ACTIVIDADES REALIZADAS EN EL ÁMBITO ACADÉMICO -->
+        <!-- Campo para Cargar el PDF Completado -->
         <section>
-            <h2>III. OTRAS ACTIVIDADES REALIZADAS EN EL ÁMBITO ACADÉMICO</h2>
-
-            <label for="otrasActividadesAcademicas">Otras Actividades Realizadas:</label>
-            <textarea id="otrasActividadesAcademicas" name="otrasActividadesAcademicas" rows="4"></textarea>
+            <h2>Adjuntar Archivo PDF Completo:</h2>
+            <label for="archivoPDFCompleto">Adjuntar PDF Completo:</label>
+            <input type="file" id="archivoPDFCompleto" name="archivoPDFCompleto" accept=".pdf">
         </section>
-
-        <!-- *CRONOGRAMA DE ACTIVIDADES PARA EL PRÓXIMO SEMESTRE -->
-        <section>
-            <h2>*CRONOGRAMA DE ACTIVIDADES PARA EL PRÓXIMO SEMESTRE</h2>
-
-            <table>
-                <thead>
-                    <h2>Actividades</h2>
-                    <tr>
-                        <th>Actividades</th>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-
-
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="text" name="actividad1"></td>
-                        <td><input type="text" name="actividad2"></td>
-                        <td><input type="text" name="actividad3"></td>
-                        <td><input type="text" name="actividad4"></td>
-                        <td><input type="text" name="actividad5"></td>
-                        <td><input type="text" name="actividad5"></td>
-
-                    </tr>
-
-
-                    <section>
-                        <h2>IV. EVALUACION DEL (LA) DIRECTOR(A) DEL INSTITUTO</h2>
-
-                        <label for="evaluacionDirector">Evaluación del Director del Instituto:</label>
-                        <textarea id="evaluacionDirector" name="evaluacionDirector" rows="4"></textarea>
-
-                        <label for="firmaDirector">Firma del Director del Instituto:</label>
-                        <input type="text" id="firmaDirector" name="firmaDirector">
-
-                        <label for="fechaDirector">Fecha de Evaluación:</label>
-                        <input type="date" id="fechaDirector" name="fechaDirector">
-                    </section>
-
-                    <!-- V. OBSERVACIÓN DEL (LA) DIRECTOR(A) DE INVESTIGACIÓN DE LA FACULTAD -->
-                    <section>
-                        <h2>V. OBSERVACIÓN DEL (LA) DIRECTOR(A) DE INVESTIGACIÓN DE LA FACULTAD</h2>
-
-                        <label for="observacionDirectorFacultad">Observaciones del Director de Investigación de la
-                            Facultad:</label>
-                        <textarea id="observacionDirectorFacultad" name="observacionDirectorFacultad"
-                            rows="4"></textarea>
-
-                        <label for="firmaDirectorFacultad">Firma del Director de Investigación de la Facultad:</label>
-                        <input type="text" id="firmaDirectorFacultad" name="firmaDirectorFacultad">
-
-                        <label for="fechaDirectorFacultad">Fecha de Observación:</label>
-                        <input type="date" id="fechaDirectorFacultad" name="fechaDirectorFacultad">
-                    </section>
-                </tbody>
-            </table>
-
-        </section>
-
-        <label for="archivoPDF">Adjuntar PDF:</label>
-        <input type="file" id="archivoPDF" name="archivoPDF" accept=".pdf">
-
 
         <button type="submit">Enviar Informe</button>
     </form>
-
 </body>
 
 </html>
